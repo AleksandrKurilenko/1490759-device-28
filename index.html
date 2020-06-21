@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -9,7 +9,7 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body>
+<body class="page-body">
   <header class="page__header">
     <nav class="main-navigation">
       <a href="#" class="page-logo"><img src="img/logo-device.svg" width="163" height="35" alt="логотип DEVICE"></a>
@@ -40,12 +40,13 @@
       </ul>
     </nav>
   </header>
-  <main>
-    <section>
+  <main class="main-page__index">
+    <section class="section-slider">
       <h3 class="visually-hidden">слайдер</h3>
       <ul class="slider-list">
-        <li><img src="img/slider-11.png" alt="самая длинная палка для селфи" width="384" height="486">
-          <b class="slider__page">Делай селфи,<br> как Бен Стиллер!</b>
+        <li class="slider-list__item slider-list__item1"><img src="img/slider-11.png" class="slider-img slider-img1"
+            alt="самая длинная палка для селфи" width="384" height="486">
+          <b class="slider__header">Делай селфи,<br> как Бен Стиллер!</b>
           <!--Здесь будет декоративная цифра 01-->
           <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине.<br>
             Восемь (восемь, Карл!) метров длиной и весом 5 килограмм.</p>
@@ -63,8 +64,9 @@
             </tr>
           </table>
         </li>
-        <li><img src="img/slider-21.png" alt="фитнес-браслет" width="345" height="485">
-          <b class="slider__page">Худеем,<br> правильно!</b>
+        <li class="slider-list__item slider-list__item2"><img src="img/slider-21.png" class="slider-img slider-img2"
+            alt="фитнес-браслет" width="345" height="485">
+          <b class="slider__header">Худеем,<br> правильно!</b>
           <!--Здесь будет декоративная цифра 02-->
           <p class="slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
             не пропускать занятия и соблюдать диету.</p>
@@ -78,8 +80,9 @@
             </tr>
           </table>
         </li>
-        <li><img src="img/slider-31.png" alt="квадрокоптер" width="526" height="334">
-          <b class="slider__page">Порхает как бабочка,<br> жалит как пчела!</b>
+        <li class="slider-list__item slider-list__item3"><img src="img/slider-31.png" class="slider-img slider-img3"
+            alt="квадрокоптер" width="526" height="334">
+          <b class="slider__header">Порхает как бабочка,<br> жалит как пчела!</b>
           <!--Здесь будет декоративная цифра 03-->
           <p class="slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
             мощным лазером, замаскированным под стандартную камеру.</p>
@@ -163,52 +166,41 @@
         <li><a href="#"><img src="img/logo-4.png" alt="логотип-vive"></a></li>
       </ul>
     </div>
-    <section class="section-info">
-      <h2 class="title__section-info">О нас</h2>
-      <p class="text__section-info">Огромный выбор гаджетов не оставит равнодушным гика,<br>
-        который есть в каждом из нас.</p>
-      <p class="text__section-info">Мы можем доставить ваш товар в самые отдаленные точки<br>
-        России! DEVICE работает со многими транспортными компаниями:</p>
-      <ul class="section-info__delivery-list">
-        <li class="section-info__delivery-item">Деловые линии</li>
-        <li class="section-info__delivery-item">Автотрейдинг</li>
-        <li class="section-info__delivery-item">ЖелДорЭкспедиция</li>
-      </ul>
-      <a href="#" class="btn">Подробнее о нас</a>
-    </section>
-    <section class="section-contacts">
-      <h2 class="title__section-info">Контакты</h2>
-      <p class="text__section-info">Вы можете забрать товар сами, заехав в наш офис.Заодно, вы сможете<br>
-        проверить работоспособность покупки. Всякое бывает.</p>
-      <a href=""><img src="img/map1.jpg" alt="карта как доехать" width="560" height="222"></a>
-      <a href="" class="btn"> напишите нам</a>
-    </section>
-    <section class="popup-write-us">
-      <h2 class="visually-hidden">Форма для обратной связи</h2>
-      <form class="popup-form" method="post" action="https://echo.htmlacademy.ru">
-        <label for="user-name">Ваше имя:</label>
-        <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
-        <label for="user-email">Ваш e-mail:</label>
-        <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
-        <label for="user-message">Текст письма:</label>
-        <textarea id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
-        <button class="btn" type="submit" name="send">Отправить</button>
-        <button class="popup-write-us_close" type="reset" name="close" aria-label="закрыть">
-        </button>
-      </form>
-    </section>
+    <div class="info">
+      <section class="section-info">
+        <h2 class="title__section-info">О нас</h2>
+        <p class="text__section-info">Огромный выбор гаджетов не оставит равнодушным гика,<br>
+          который есть в каждом из нас.</p>
+        <p class="text__section-info">Мы можем доставить ваш товар в самые отдаленные точки<br>
+          России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul class="section-info__delivery-list">
+          <li class="section-info__delivery-item">Деловые линии</li>
+          <li class="section-info__delivery-item">Автотрейдинг</li>
+          <li class="section-info__delivery-item">ЖелДорЭкспедиция</li>
+        </ul>
+        <a href="#" class="btn">Подробнее о нас</a>
+      </section>
+      <section class="section-contacts">
+        <h2 class="title__section-info">Контакты</h2>
+        <p class="text__section-info">Вы можете забрать товар сами, заехав в наш офис.Заодно, вы сможете<br>
+          проверить работоспособность покупки. Всякое бывает.</p>
+        <a href=""><img src="img/map1.jpg" alt="карта как доехать" width="560" height="222"></a>
+        <a href="" class="btn"> напишите нам</a>
+      </section>
+    </div>
+
   </main>
   <footer class="page_footer">
-    <div>
+    <div class="footer-user">
       <a href="#" class="page-logo__footer"><img src="img/footer-e-logo.svg" width="163" height="35"
           alt="логотип DEVICE"></a>
       <ul class="user__list-footer">
-        <li><a href="#">войти</a></li>
-        <li><a href="#">сравнить</a></li>
-        <li><a href="#">корзина</a></li>
+        <li><a href="#" class="login-footer">войти</a></li>
+        <li><a href="#" class="compare">сравнить</a></li>
+        <li><a href="#" class="basket">корзина</a></li>
       </ul>
     </div>
-    <div>
+    <div class="footer-info">
       <address class="footer-address">г.Москва,ул.Строителей,15</address>
       <ul class="nav__list-footer">
         <li><a href="#">доставка</a></li>
@@ -217,7 +209,7 @@
       </ul>
       <a href="tel:+74954959595" class="tel">+7 (495) 495-95-95</a>
     </div>
-    <div>
+    <div class="social-list">
       <ul class="social__list-footer">
         <li><a href="#">фейсбук</a></li>
         <li><a href="#">инстаграм</a></li>
@@ -228,6 +220,20 @@
       </a>
     </div>
   </footer>
+  <section class="popup-write-us">
+    <h2 class="visually-hidden">Форма для обратной связи</h2>
+    <form class="popup-form" method="post" action="https://echo.htmlacademy.ru">
+      <label for="user-name">Ваше имя:</label>
+      <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+      <label for="user-email">Ваш e-mail:</label>
+      <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
+      <label for="user-message">Текст письма:</label>
+      <textarea id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
+      <button class="btn" type="submit" name="send">Отправить</button>
+      <button class="popup-write-us_close" type="reset" name="close" aria-label="закрыть">
+      </button>
+    </form>
+  </section>
   <section class="map">
     <h2 class="visually-hidden">большая карта</h2>
     <a href=""><img src="img/map-big1.png" alt="карта как доехать"></a>
