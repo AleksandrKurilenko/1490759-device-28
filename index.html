@@ -9,8 +9,8 @@
   <link href="css/style.css" rel="stylesheet">
 </head>
 
-<body class="page-body">
-  <header class="page__header">
+<body>
+  <header class="page-header">
     <nav class="main-navigation">
       <a href="#" class="page-logo"><img src="img/logo-device.svg" width="163" height="35" alt="логотип DEVICE"></a>
       <form class="search" method="get" action="https://echo.htmlacademy.ru">
@@ -18,14 +18,14 @@
         <input class="search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
         <button class="search-button" type="submit">Найти</button>
       </form>
-      <ul class="user__list-navigation">
-        <li><a href="#">войти</a></li>
-        <li><a href="#">сравнить</a></li>
-        <li><a href="#">корзина</a></li>
+      <ul class="user-list--navigation">
+        <li class="user-list--login"><a href="#">войти</a></li>
+        <li class="user-list--compare"><a href="#">сравнить</a></li>
+        <li class="user-list--cart"><a href="#">корзина</a></li>
       </ul>
       <ul class="nav__list-navigation">
         <li><a href="#" class="main_nav-catalog">каталог товаров</a>
-          <ul class="list-navigation_column">
+          <ul class="list-navigation--column">
             <li><a href="#">виртуальная реальность</a></li>
             <li><a href="catalog.html">моноподы для селфи</a></li>
             <li><a href="#">экшн-камеры</a></li>
@@ -34,9 +34,9 @@
             <li><a href="#">квадрокоптер</a></li>
           </ul>
         </li>
-        <li><a href="#">доставка</a></li>
-        <li><a href="#">гарантия</a></li>
-        <li><a href="#">контакты</a></li>
+        <li class="nav-delivery"><a href="#">доставка</a></li>
+        <li class="nav-warranty"><a href="#">гарантия</a></li>
+        <li class="nav-contacts"><a href="#">контакты</a></li>
       </ul>
     </nav>
   </header>
@@ -44,17 +44,17 @@
     <section class="section-slider">
       <h3 class="visually-hidden">слайдер</h3>
       <ul class="slider-list">
-        <li class="slider-list__item slider-list__item1"><img src="img/slider-11.png" class="slider-img slider-img1"
+        <li class="slider-list--item slider-list--item1"><img src="img/slider-11.png" class="slider-img slider-img1"
             alt="самая длинная палка для селфи" width="384" height="486">
-          <b class="slider__header">Делай селфи,<br> как Бен Стиллер!</b>
+          <b class="slider-header">Делай селфи,<br> как Бен Стиллер!</b>
           <!--Здесь будет декоративная цифра 01-->
           <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине.<br>
             Восемь (восемь, Карл!) метров длиной и весом 5 килограмм.</p>
-          <a href="#" class="btn">подробнее</a>
-          <table class="table-slider__1">
+          <a href="#" class="btn slider-btn">подробнее</a>
+          <table class="table-slider">
             <tr class="table-value">
-              <td>8,5м</td>
-              <td>5 кг</td>
+              <td>8,5 &nbsp;м</td>
+              <td>5 &nbsp;кг</td>
               <td>Карбон</td>
             </tr>
             <tr class="table-parameters">
@@ -64,33 +64,33 @@
             </tr>
           </table>
         </li>
-        <li class="slider-list__item slider-list__item2"><img src="img/slider-21.png" class="slider-img slider-img2"
+        <li class="slider-list--item slider-list--item2"><img src="img/slider-21.png" class="slider-img slider-img2"
             alt="фитнес-браслет" width="345" height="485">
           <b class="slider__header">Худеем,<br> правильно!</b>
           <!--Здесь будет декоративная цифра 02-->
           <p class="slider__text">Мотивирующие фитнес-браслеты помогут найти в себе силы<br>
             не пропускать занятия и соблюдать диету.</p>
-          <a href="#" class="btn">подробнее</a>
-          <table class="table-slider__1">
+          <a href="#" class="btn slider-btn">подробнее</a>
+          <table class="table-slider">
             <tr class="table-value">
-              <td>48часов</td>
+              <td>48 &nbsp;часов</td>
             </tr>
             <tr class="table-parameters">
               <td>Без подзарядки</td>
             </tr>
           </table>
         </li>
-        <li class="slider-list__item slider-list__item3"><img src="img/slider-31.png" class="slider-img slider-img3"
+        <li class="slider-list--item slider-list--item3"><img src="img/slider-31.png" class="slider-img slider-img3"
             alt="квадрокоптер" width="526" height="334">
           <b class="slider__header">Порхает как бабочка,<br> жалит как пчела!</b>
           <!--Здесь будет декоративная цифра 03-->
           <p class="slider__text">Этот обычный, на первый взгляд, квадрокоптер оснащен<br>
             мощным лазером, замаскированным под стандартную камеру.</p>
-          <a href="#" class="btn">подробнее</a>
-          <table class="table-slider__1">
+          <a href="#" class="btn slider-btn">подробнее</a>
+          <table class="table-slider">
             <tr class="table-value">
-              <td>800м</td>
-              <td>50м</td>
+              <td>800 &nbsp;м</td>
+              <td>50 &nbsp;м</td>
             </tr>
             <tr class="table-parameters">
               <td>Дальность полёта</td>
@@ -99,7 +99,7 @@
           </table>
         </li>
       </ul>
-      <div>
+      <div class="slider-radio">
         <input type="radio" name="radio-button" id="radio-button1">
         <label for="radio-button1" hidden>первый слайд</label>
         <input type="radio" name="radio-button" id="radio-button2">
@@ -134,22 +134,27 @@
     </section>
     <section class="service">
       <h2 class="visually-hidden">обслуживание-сервис</h2>
+      <div class="service-btn--group">
+        <a href="#" class="service-btn">доставка</a>
+        <a href="#" class="service-btn">гарантия</a>
+        <a href="#" class="service-btn">кредит</a>
+      </div>
       <ul class="service-list">
-        <li><a href="#" class="service-btn">доставка</a>
+        <li class="service-list--delivery"><b>доставка</b>
           <p class="service-text">Мы с удовольствием доставим ваш товар прямо к вашему<br>
             подъезду совершенно бесплатно! Ведь мы не плохо<br>
             заработаем, поднимая его на ваш этаж.</p>
           <!--картинка svg-->
           <a href="#">декоративный элемент "доставка"</a>
         </li>
-        <li><a href="#" class="service-btn">гарантия</a>
+        <li class="service-list--warranty"><b>гарантия</b>
           <p class="service-text">Если из-за возгорания купленного у нас товара у вас сгорит<br>
             дом — не переживайте, мы выдадим вам новый.<br>
             Товар, не дом, конечно же.</p>
           <!--картинка svg-->
           <a href="#">декоратиный элемент "гарантия"</a>
         </li>
-        <li><a href="#" class="service-btn">кредит</a>
+        <li class="service-list--credit"><b>кредит</b>
           <p class="service-text">Залезть в долговую яму стало проще! Кредитные<br>
             консультанты подберут для вас наиболее выгодные<br>
             условия кредита. Выгодные для нашего банка, разумеется.</p>
@@ -178,34 +183,34 @@
           <li class="section-info__delivery-item">Автотрейдинг</li>
           <li class="section-info__delivery-item">ЖелДорЭкспедиция</li>
         </ul>
-        <a href="#" class="btn">Подробнее о нас</a>
+        <a href="#" class="btn btn-info">Подробнее о нас</a>
       </section>
       <section class="section-contacts">
         <h2 class="title__section-info">Контакты</h2>
         <p class="text__section-info">Вы можете забрать товар сами, заехав в наш офис.Заодно, вы сможете<br>
           проверить работоспособность покупки. Всякое бывает.</p>
-        <a href=""><img src="img/map1.jpg" alt="карта как доехать" width="560" height="222"></a>
-        <a href="" class="btn"> напишите нам</a>
+        <a href="#"><img src="img/map1.jpg" alt="карта как доехать" width="560" height="222"></a>
+        <a href="#" class="btn btn-info"> напишите нам</a>
       </section>
     </div>
 
   </main>
-  <footer class="page_footer">
+  <footer class="page-footer">
     <div class="footer-user">
       <a href="#" class="page-logo__footer"><img src="img/footer-e-logo.svg" width="163" height="35"
           alt="логотип DEVICE"></a>
       <ul class="user__list-footer">
         <li><a href="#" class="login-footer">войти</a></li>
-        <li><a href="#" class="compare">сравнить</a></li>
-        <li><a href="#" class="basket">корзина</a></li>
+        <li><a href="#" class="compare-footer">сравнить</a></li>
+        <li><a href="#" class="basket-footer">корзина</a></li>
       </ul>
     </div>
     <div class="footer-info">
       <address class="footer-address">г.Москва,ул.Строителей,15</address>
       <ul class="nav__list-footer">
-        <li><a href="#">доставка</a></li>
-        <li><a href="#">гарантия</a></li>
-        <li><a href="#">контакты</a></li>
+        <li class="footer-delivery"><a href="#">доставка</a></li>
+        <li class="footer-warranty"><a href="#">гарантия</a></li>
+        <li class="footer-contacts"><a href="#">контакты</a></li>
       </ul>
       <a href="tel:+74954959595" class="tel">+7 (495) 495-95-95</a>
     </div>
@@ -215,7 +220,8 @@
         <li><a href="#">инстаграм</a></li>
         <li><a href="#">твиттер</a></li>
       </ul>
-      <a href="https://up.htmlacademy.ru/htmlcss/28/project/device#device-3-4" target="blank">
+      <a href="https://up.htmlacademy.ru/htmlcss/28/project/device#device-3-4" class="logo-academy--footer"
+        target="blank">
         <img src="img/logo-html.svg" width="27" height="34" alt="логотип академии">
       </a>
     </div>
