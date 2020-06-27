@@ -74,15 +74,18 @@ a {
   border: 0;
 }
 
+.conteiner {
+  width: 1160px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* header */
 
 .page-header {
   display: grid;
   margin-top: 40px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 0px;
-  width: 1160px;
 }
 
 .page-logo {
@@ -93,6 +96,7 @@ a {
 .main-navigation {
   display: flex;
   flex-direction: column;
+  height: 186px;
   padding-top: 28px;
   padding-right: 60px;
   padding-bottom: 160px;
@@ -197,7 +201,6 @@ a {
 .section-slider {
   position: relative;
   display: grid;
-  margin-top: -280px;
 }
 
 .slider-list .slider-list--item1 {
@@ -403,10 +406,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 1160px;
   margin-top: 80px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 0;
 }
 
@@ -415,15 +415,12 @@ a {
   grid-auto-flow: column;
   justify-content: center;
   margin-top: 90px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .section-info {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  ;
   width: 473px;
   margin-right: 127px;
 }
@@ -432,7 +429,6 @@ a {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  ;
   width: 560px;
 }
 
@@ -452,21 +448,20 @@ a {
 
 .title__section-info {
   margin-top: 0;
-
   font-family: "Gilroy";
   font-style: normal;
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
   letter-spacing: 0.2em;
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .text__section-info {
   margin-bottom: 40px;
   font-style: normal;
   line-height: 28px;
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .section-contacts .text__section-info .title__section-info {
@@ -515,7 +510,7 @@ a {
   font-weight: 800;
   font-size: 47px;
   line-height: 58px;
-  color: #000000;
+  color: var(--basic-black);
 }
 
 .content__list {
