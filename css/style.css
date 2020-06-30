@@ -206,7 +206,6 @@ a {
 /* main-index */
 
 .section-slider {
-  position: relative;
   display: grid;
   margin-top: 35px;
 }
@@ -314,19 +313,22 @@ a {
 
 .main-link__goods {
   display: grid;
+  justify-content: center;
   width: 1160;
   margin-top: 76px;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .goods__link {
   display: flex;
+  flex-direction: row;
+  align-content: center;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin: 0;
   width: 1160px;
-  padding: 0;
+  padding-left: 0;
+  padding-right: 0;
   background-color: #F7E296;
 }
 
@@ -350,9 +352,9 @@ a {
 
 .service {
   display: grid;
-  justify-content: start;
   grid-auto-flow: column;
-  margin-top: 184px;
+  align-content: center;
+  margin-top: 84px;
   margin-left: auto;
   margin-right: auto;
   background-color: #E5E5E5;
@@ -372,6 +374,17 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  width: 896px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.service-btn--group {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 297px;
+  margin-left: 20px;
 }
 
 .service-list--warranty,
@@ -402,13 +415,6 @@ a {
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: #000000;
-}
-
-.service-btn--group {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 0px;
 }
 
 .service-text {
@@ -529,6 +535,20 @@ a {
   line-height: 58px;
   color: var(--basic-black);
 }
+
+.catalog-nav--item::after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  right: 19px;
+  width: 5px;
+  height: 5px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
 
 .content__list {
   display: flex;
