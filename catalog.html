@@ -11,28 +11,31 @@
 
 <body>
   <header class="page-header conteiner">
+    <a href="index.html" class="page-logo"><img src="img/logo-device.svg" width="163" height="35"
+        alt="логотип DEVICE"></a>
     <nav class="main-navigation">
-      <a href="index.html" class="page-logo"><img src="img/logo-device.svg" width="163" height="35"
-          alt="логотип DEVICE"></a>
-      <form class="search" method="get" action="https://echo.htmlacademy.ru">
-        <label class="visually-hidden" for="search" hidden>поиск по сайту</label>
-        <input class="search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
-        <button class="search-button" type="submit">Найти</button>
-      </form>
-      <ul class="user-list--navigation">
-        <li class="user-list--login login-catalog"><a href="#">Валентин Петухов</a><a href="#">Выйти</a></li>
-        <li class="user-list--compare"><a href="#">сравнить</a></li>
-        <li class="user-list--cart"><a href="#">корзина</a></li>
-      </ul>
+      <div class="main-nav--user">
+        <form class="search" method="get" action="https://echo.htmlacademy.ru">
+          <label class="visually-hidden" for="search" hidden>поиск по сайту</label>
+          <input class="search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit">Найти</button>
+        </form>
+        <ul class="user-list--navigation">
+          <li class="user-list--login login-catalog"><a href="#" class="user-login">Валентин Петухов</a><a
+              href="#">Выйти</a></li>
+          <li class="user-list--compare compare-catalog"><a href="#" class="user-compare">сравнить</a></li>
+          <li class="user-list--cart"><a href="#" class="user-cart">корзина</a></li>
+        </ul>
+      </div>
       <ul class="nav__list-navigation">
         <li><a href="#" class="main_nav-catalog">каталог товаров</a>
           <ul class="list-navigation--column">
-            <li><a href="#">виртуальная реальность</a></li>
-            <li><a>моноподы для селфи</a></li>
-            <li><a href="#">экшн-камеры</a></li>
-            <li><a href="#">фитнес-браслеты</a></li>
-            <li><a href="#">умные часы</a></li>
-            <li><a href="#">квадрокоптер</a></li>
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a>Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптер</a></li>
           </ul>
         </li>
         <li class="nav-delivery"><a href="#">доставка</a></li>
@@ -42,21 +45,19 @@
     </nav>
   </header>
   <main>
-    <section class="catalog-navigation">
+    <section class="catalog-navigation conteiner">
       <h1 class="content__title">Моноподы для селфи</h1>
-      <nav>
-        <ul class="content__list">
-          <li class="catalog-nav--item"><a href="index.html">главная</a></li>
-          <li><a href="">каталог товаров</a></li>
-          <li><a>моноподы для селфи</a></li>
-        </ul>
-      </nav>
+      <ul class="content__list">
+        <li class="catalog-nav--main-page"><a href="index.html">Главная</a></li>
+        <li class="catalog-nav--goods"><a href="#">Каталог товаров</a></li>
+        <li class="catalog-nav--selfie"><a>Моноподы для селфи</a></li>
+      </ul>
     </section>
-    <div class="main-catalog">
+    <div class="main-catalog conteiner">
       <section class="section-filter">
         <h4 class="header-4--filter">фильтр:</h4>
         <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-          <fieldset class="filter__item">
+          <fieldset class="filter__item  filter__item-range">
             <legend>Стоимость:</legend>
             <div class="range-filter">
               <div class="range-controls">
@@ -103,17 +104,17 @@
             </ul>
           </fieldset>
           <fieldset class="filter__item">
-            <legend>Bluetooth</legend>
+            <legend class="filter-item--bluetooth">Bluetooth</legend>
             <ul class="filter__radio-list">
-              <li class="filter__radio-item">
+              <li class="filter__radio-yes">
                 <input class="filter__radio-input  visually-hidden" id="filter-control-1" type="radio" name="bluetooth"
                   value="yes" checked="">
-                <label class="filter__radio-label" for="filter-control-1">Есть</label>
+                <label class="filter-radio-label--yes" for="filter-control-1">Есть</label>
               </li>
-              <li class="filter__radio-item">
+              <li class="filter__radio-no">
                 <input class="filter__radio-input  visually-hidden" id="filter-control-2" type="radio" name="bluetooth"
                   value="no">
-                <label class="filter__radio-label" for="filter-control-2">Нет</label>
+                <label class="filter__radio-label--no" for="filter-control-2">Нет</label>
               </li>
             </ul>
           </fieldset>
@@ -123,15 +124,15 @@
       <section class="goods-section">
         <h2 class="visually-hidden">товары селфи-палки</h2>
         <section class="sort-section">
-          <h4 class="header-4">Сортировка:</h4>
+          <h4 class="header-4 sort-list-header">Сортировка:</h4>
           <ul class="sort-list">
-            <li><a href="#">по цене</a></li>
-            <li><a href="#">по типу</a></li>
-            <li><a href="#">по популярности</a></li>
+            <li class="sort-list--price"><a href="#">по цене</a></li>
+            <li class="sort-list--type"><a href="#">по типу</a></li>
+            <li class="sort-list--popular"><a href="#">по популярности</a></li>
           </ul>
-          <ul>
-            <li><a href="#">стрелочка вверх</a></li>
-            <li><a href="#">стрелочка вниз</a></li>
+          <ul class="sort-list-arrows">
+            <li><a href="#" class="sort-arrow-up"></a></li>
+            <li><a href="#" class="sort-arrow-down"></a></li>
           </ul>
         </section>
         <ul class="main-content__img">
@@ -163,7 +164,7 @@
             </div>
           </li>
           <li class="goods-list__img4"><img src="img/item-41.jpg" alt="Селфи-палка Следуй за мной" width="360"
-              height="380"><img src="img/Shape21.png" alt="new">
+              height="380"><img class="goods-icon--new" src="img/Shape21.png" alt="new">
             <h3><a href="#" class="titel__goods-item">Селфи-палка "Следуй за мной"</a></h3>
             <p class="price">4900руб.</p>
             <div class="goods-btn--hidden">
@@ -173,39 +174,39 @@
           </li>
         </ul>
         <ul class="pagination-list">
-          <li><a href="#">назад</a></li>
-          <li><a href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">вперёд</a></li>
+          <li class="pagination-back"><a href="#">назад</a></li>
+          <li class="pagination-1"><a href="#">1</a></li>
+          <li class="pagination-2"><a href="#">2</a></li>
+          <li class="pagination-3"><a href="#">3</a></li>
+          <li class="pagination-forward"><a href="#">вперёд</a></li>
         </ul>
       </section>
     </div>
   </main>
   <footer class="page-footer">
-    <div class="footer-user">
+    <div class="footer-user conteiner">
       <a href="#" class="page-logo__footer"><img src="img/footer-e-logo.svg" width="163" height="35"
           alt="логотип DEVICE"></a>
       <ul class="user__list-footer">
-        <li><a href="#" class="login-footer">Валентин Петухов</a><a href="#">Выйти</a></li>
-        <li><a href="#" class="compare-footer">сравнить</a></li>
+        <li><a href="#" class="login-footer-catalog">Валентин Петухов</a><a href="#">Выйти</a></li>
+        <li><a href="#" class="compare-footer-catalog">сравнить</a></li>
         <li><a href="#" class="basket-footer">корзина</a></li>
       </ul>
     </div>
-    <div class="footer-info">
+    <div class="footer-info conteiner">
       <address class="footer-address">г.Москва,ул.Строителей,15</address>
       <ul class="nav__list-footer">
-        <li><a href="#">доставка</a></li>
-        <li><a href="#">гарантия</a></li>
-        <li><a href="#">контакты</a></li>
+        <li class="footer-delivery"><a href="#">доставка</a></li>
+        <li class="footer-warranty"><a href="#">гарантия</a></li>
+        <li class="footer-contacts"><a href="#">контакты</a></li>
       </ul>
       <a href="tel:+74954959595" class="tel">+7 (495) 495-95-95</a>
     </div>
-    <div class="social-list">
+    <div class="social-list conteiner">
       <ul class="social__list-footer">
-        <li><a href="#">фейсбук</a></li>
-        <li><a href="#">инстаграм</a></li>
-        <li><a href="#">твиттер</a></li>
+        <li><a href="#" class="social__list-facebook"></a></li>
+        <li><a href="#" class="social__list-instagram"></a></li>
+        <li><a href="#" class="social__list-twitter"></a></li>
       </ul>
       <a href="https://up.htmlacademy.ru/htmlcss/28/project/device#device-3-4" class="logo-academy--footer"
         target="blank">
