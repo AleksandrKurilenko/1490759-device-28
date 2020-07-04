@@ -11,27 +11,29 @@
 
 <body>
   <header class="page-header conteiner">
+    <a href="#" class="page-logo"><img src="img/logo-device.svg" width="163" height="35" alt="логотип DEVICE"></a>
     <nav class="main-navigation">
-      <a href="#" class="page-logo"><img src="img/logo-device.svg" width="163" height="35" alt="логотип DEVICE"></a>
-      <form class="search" method="get" action="https://echo.htmlacademy.ru">
-        <label class="visually-hidden" for="search" hidden>поиск по сайту</label>
-        <input class="search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
-        <button class="search-button" type="submit">Найти</button>
-      </form>
-      <ul class="user-list--navigation">
-        <li class="user-list--login"><a href="#">войти</a></li>
-        <li class="user-list--compare"><a href="#">сравнить</a></li>
-        <li class="user-list--cart"><a href="#">корзина</a></li>
-      </ul>
+      <div class="main-nav--user">
+        <form class="search" method="get" action="https://echo.htmlacademy.ru">
+          <label class="visually-hidden" for="search" hidden>поиск по сайту</label>
+          <input class="search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+          <button class="search-button" type="submit">Найти</button>
+        </form>
+        <ul class="user-list--navigation">
+          <li class="user-list--login"><a href="#" class="user-login">войти</a></li>
+          <li class="user-list--compare"><a href="#" class="user-compare">сравнить</a></li>
+          <li class="user-list--cart"><a href="#" class="user-cart">корзина</a></li>
+        </ul>
+      </div>
       <ul class="nav__list-navigation">
         <li><a href="#" class="main_nav-catalog">каталог товаров</a>
           <ul class="list-navigation--column">
-            <li><a href="#">виртуальная реальность</a></li>
-            <li><a href="catalog.html">моноподы для селфи</a></li>
-            <li><a href="#">экшн-камеры</a></li>
-            <li><a href="#">фитнес-браслеты</a></li>
-            <li><a href="#">умные часы</a></li>
-            <li><a href="#">квадрокоптер</a></li>
+            <li><a href="#">Виртуальная реальность</a></li>
+            <li><a href="catalog.html">Моноподы для селфи</a></li>
+            <li><a href="#">Экшн-камеры</a></li>
+            <li><a href="#">Фитнес-браслеты</a></li>
+            <li><a href="#">Умные часы</a></li>
+            <li><a href="#">Квадрокоптер</a></li>
           </ul>
         </li>
         <li class="nav-delivery"><a href="#">доставка</a></li>
@@ -44,25 +46,27 @@
     <section class="section-slider conteiner">
       <h3 class="visually-hidden">слайдер</h3>
       <ul class="slider-list">
-        <li class="slider-list--item slider-list--item1 conteiner"><img src="img/slider-11.png"
-            class="slider-img slider-img1" alt="самая длинная палка для селфи" width="384" height="486">
-          <b class="slider-header">Делай селфи,<br> как Бен Стиллер!</b>
-          <!--Здесь будет декоративная цифра 01-->
-          <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине.<br>
-            Восемь (восемь, Карл!) метров длиной и весом 5 килограмм.</p>
-          <a href="#" class="btn slider-btn">подробнее</a>
-          <table class="table-slider">
-            <tr class="table-value">
-              <td>8,5&nbsp;м</td>
-              <td>5&nbsp;кг</td>
-              <td>Карбон</td>
-            </tr>
-            <tr class="table-parameters">
-              <td>Длина палки</td>
-              <td>Вес палки</td>
-              <td>Материал палки</td>
-            </tr>
-          </table>
+        <li class="slider-list--item slider-list--item1">
+          <div class="slider-list-picture"><img src="img/slider-11.png" class="slider-img slider-img1"
+              alt="самая длинная палка для селфи" width="384" height="486"></div>
+          <div class="slider-list-data"><b class="slider-header">Делай селфи,<br> как Бен Стиллер!</b>
+            <!--Здесь будет декоративная цифра 01-->
+            <p class="slider__text">Самая длинная палка для селфи доступна в нашем магазине.<br>
+              Восемь (восемь, Карл!) метров длиной и весом 5 килограмм.</p>
+            <a href="#" class="btn slider-btn">подробнее</a>
+            <table class="table-slider">
+              <tr class="table-value">
+                <td>8,5&nbsp;м</td>
+                <td>5&nbsp;кг</td>
+                <td>Карбон</td>
+              </tr>
+              <tr class="table-parameters">
+                <td>Длина палки</td>
+                <td>Вес палки</td>
+                <td>Материал</td>
+              </tr>
+            </table>
+          </div>
         </li>
         <li class="slider-list--item slider-list--item2"><img src="img/slider-21.png" class="slider-img slider-img2"
             alt="фитнес-браслет" width="345" height="485">
@@ -108,31 +112,31 @@
         <label for="radio-button3" hidden>третий слайд</label>
       </div>
     </section>
-    <section class="main-link__goods">
+    <section class="main-link__goods conteiner">
       <h1 class="visually-hidden">гатжеты,электродевайсы</h1>
       <!--список svg иконок-->
-      <ul class="goods__link">
-        <li><a href="#">
+      <ul class="goods-link">
+        <li><a href="#" class="goods-link--vr">
             <p>виртуальная реальность</p>
           </a></li>
-        <li><a href="catalog.html">
+        <li><a href="catalog.html" class="goods-link--selfie">
             <p>моноподы для селфи</p>
           </a></li>
-        <li><a href="#">
+        <li><a href="#" class="goods-link--camera">
             <p>экшен-камеры</p>
           </a></li>
-        <li><a href="#">
+        <li><a href="#" class="goods-link--fitnes">
             <p>фитнес-браслеты</p>
           </a></li>
-        <li><a href="#">
+        <li><a href="#" class="goods-link--watch">
             <p>умные часы</p>
           </a></li>
-        <li><a href="#">
+        <li><a href="#" class="goods-link--copter">
             <p>квадрокоптеры</p>
           </a></li>
       </ul>
     </section>
-    <section class="service">
+    <section class="service conteiner">
       <h2 class="visually-hidden">обслуживание-сервис</h2>
       <div class="service-btn--group">
         <a href="#" class="service-btn">доставка</a>
@@ -145,7 +149,6 @@
             подъезду совершенно бесплатно! Ведь мы не плохо<br>
             заработаем, поднимая его на ваш этаж.</p>
           <!--картинка svg-->
-          <a href="#">декоративный элемент "доставка"</a>
         </li>
         <li class="service-list--warranty"><b>гарантия</b>
           <p class="service-text">Если из-за возгорания купленного у нас товара у вас сгорит<br>
@@ -195,7 +198,7 @@
     </div>
   </main>
   <footer class="page-footer">
-    <div class="footer-user">
+    <div class="footer-user conteiner">
       <a href="#" class="page-logo__footer"><img src="img/footer-e-logo.svg" width="163" height="35"
           alt="логотип DEVICE"></a>
       <ul class="user__list-footer">
@@ -204,7 +207,7 @@
         <li><a href="#" class="basket-footer">корзина</a></li>
       </ul>
     </div>
-    <div class="footer-info">
+    <div class="footer-info conteiner">
       <address class="footer-address">г.Москва,ул.Строителей,15</address>
       <ul class="nav__list-footer">
         <li class="footer-delivery"><a href="#">доставка</a></li>
@@ -213,11 +216,11 @@
       </ul>
       <a href="tel:+74954959595" class="tel">+7 (495) 495-95-95</a>
     </div>
-    <div class="social-list">
+    <div class="social-list conteiner">
       <ul class="social__list-footer">
-        <li><a href="#">фейсбук</a></li>
-        <li><a href="#">инстаграм</a></li>
-        <li><a href="#">твиттер</a></li>
+        <li><a href="#" class="social__list-facebook"></a></li>
+        <li><a href="#" class="social__list-instagram"></a></li>
+        <li><a href="#" class="social__list-twitter"></a></li>
       </ul>
       <a href="https://up.htmlacademy.ru/htmlcss/28/project/device#device-3-4" class="logo-academy--footer"
         target="blank">
@@ -227,23 +230,33 @@
   </footer>
   <section class="popup-write-us">
     <h2 class="visually-hidden">Форма для обратной связи</h2>
-    <form class="popup-form" method="post" action="https://echo.htmlacademy.ru">
-      <label for="user-name">Ваше имя:</label>
-      <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
-      <label for="user-email">Ваш e-mail:</label>
-      <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
-      <label for="user-message">Текст письма:</label>
-      <textarea id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
-      <button class="btn" type="submit" name="send">Отправить</button>
+    <div class="popup-block">
+      <form class="popup-form" method="post" action="https://echo.htmlacademy.ru">
+        <div class="popup-form--username">
+          <label for="user-name">Ваше имя:</label>
+          <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+        </div>
+        <div class="popup-form--email">
+          <label for="user-email">Ваш e-mail:</label>
+          <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
+        </div>
+        <div class="popup-form--message">
+          <label for="user-message">Текст письма:</label>
+          <textarea id="user-message" name="user-message" placeholder="В свободной форме"></textarea>
+        </div>
+        <button class="btn" type="submit" name="send">Отправить</button>
+      </form>
       <button class="popup-write-us_close" type="reset" name="close" aria-label="закрыть">
       </button>
-    </form>
+    </div>
   </section>
   <section class="map">
-    <h2 class="visually-hidden">большая карта</h2>
-    <a href=""><img src="img/map-big1.png" alt="карта как доехать"></a>
-    <button class="popup-write-us_close" type="button" name="close" aria-label="закрыть">
-    </button>
+    <div class="popup-map">
+      <h2 class="visually-hidden">большая карта</h2>
+      <a href=""><img src="img/map-big1.png" alt="карта как доехать"></a>
+      <button class="popup-write-us_close popup-map-close" type="button" name="close" aria-label="закрыть">
+      </button>
+    </div>
   </section>
 </body>
 
