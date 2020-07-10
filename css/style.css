@@ -358,23 +358,23 @@ a {
 }
 
 .login-catalog .user-login {
-  padding-right: 22px;
+  padding-right: 18px;
 }
 
 .user-list-link:hover {
-  opacity: .6
+  opacity: .6;
 }
 
 .user-list-link:hover::before {
-  opacity: .6
+  opacity: .6;
 }
 
 .user-list-link:active {
-  opacity: .3
+  opacity: .3;
 }
 
 .user-list-link:active::before {
-  opacity: .3
+  opacity: .3;
 }
 
 
@@ -1532,17 +1532,30 @@ a {
   font-size: 14px;
   line-height: 19px;
   margin-top: 30px;
+  margin-bottom: 15px;
   padding: 0;
 }
 
-.catalog-nav--main-page,
-.catalog-nav--goods,
-.catalog-nav--selfie {
+.catalog-nav--main-page a,
+.catalog-nav--goods a,
+.catalog-nav--selfie a{
   opacity: 0.3;
-  color: var(--basic-black);
-  padding-right: 17px;
-
+  color: #000000;
 }
+
+.catalog-nav--main-page a:hover,
+.catalog-nav--goods a:hover {
+  opacity: 0.6;
+  color: #000000;
+}
+
+
+.catalog-nav--main-page a:active,
+.catalog-nav--goods a:active {
+  opacity: 0.1;
+  color: #000000;
+}
+
 
 .catalog-nav--main-page {
   padding-left: 60px;
@@ -1563,7 +1576,8 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
-  margin-left: 13px;
+  margin-left: 9px;
+  margin-right: 17px;
 }
 
 .catalog-nav--goods::after {
@@ -1577,7 +1591,7 @@ a {
   background-repeat: no-repeat;
   background-position: 50% 50%;
   cursor: pointer;
-  margin-left: 15px;
+  margin-left: 11px;
 }
 
 /* Фильтр */
@@ -1615,7 +1629,7 @@ a {
 }
 
 .filter {
-  padding-top: 79px;
+  padding-top: 83px;
   padding-left: 31px;
 }
 
@@ -1639,7 +1653,7 @@ a {
   content: "";
   position: absolute;
   left: 60px;
-  top: 140px;
+  top: 71px;
   width: 201px;
   height: 2px;
   background-color: #000;
@@ -1652,7 +1666,7 @@ a {
   width: 201px;
   height: 2px;
   background-color: #000;
-  top: 68px;
+  top: 216px;
 }
 
 .range-price {
@@ -1817,7 +1831,7 @@ a {
 }
 
 .checkbox-title-color {
-  padding-top: 39px;
+  padding-top: 37px;
   padding-left: 18px;
 }
 
@@ -1891,7 +1905,7 @@ a {
   width: 201px;
   height: 2px;
   background-color: #000;
-  top: 565px;
+  top: 496px;
 }
 
 .filter__radio-list {
@@ -1981,6 +1995,17 @@ a {
 
 
 
+.sort-list--type:hover,
+.sort-list--popular:hover {
+  color: #000000;
+  opacity: 0.6;
+}
+
+.sort-list--type:active,
+.sort-list--popular:active{
+  color: #000000;
+}
+
 .sort-list-arrows {
   list-style: none;
 }
@@ -2006,18 +2031,21 @@ a {
 
 .sort-list--price {
   padding-left: 25px;
+
 }
 
 .sort-list--type {
   padding-right: 0px;
   opacity: 0.3;
   padding-left: 30px;
+  color: #000000;
 }
 
 .sort-list--popular {
   padding-left: 30px;
   padding-right: 82px;
   opacity: 0.3;
+  color: #000000;
 }
 
 .sort-list-arrows {
@@ -2058,6 +2086,23 @@ a {
   background-position: 50% 50%;
   cursor: pointer;
 }
+
+.sort-arrow-up:hover {
+  opacity: 0.4;
+}
+
+.sort-arrow-up:active {
+  opacity: 1;
+}
+
+.sort-arrow-down:hover {
+  opacity: 0.4;
+}
+
+.sort-arrow-down:active {
+  opacity: 1;
+}
+
 
 /* конец сортировки */
 
@@ -2229,7 +2274,7 @@ a {
   width: 760px;
   height: 70px;
   margin-top: 12px;
-  margin-bottom: 78px;
+  margin-bottom: 79px;
   margin-left: 72px;
   padding: 0px;
 }
@@ -2314,7 +2359,7 @@ a {
 }
 
 .login-footer-catalog {
-  padding-right: 25px;
+  padding-right: 21px;
 }
 
 .compare-footer {
