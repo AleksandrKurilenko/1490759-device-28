@@ -15,30 +15,50 @@
     <nav class="main-navigation">
       <div class="main-nav--user">
         <form class="search" method="get" action="https://echo.htmlacademy.ru">
-          <label class="visually-hidden" for="search" hidden>поиск по сайту</label>
           <input class="search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+          <label class="main-nav__search-label visually-hidden" for="search">поиск по сайту</label>
           <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="user-list--navigation">
-          <li class="user-list--login"><a href="#" class="user-login">Войти</a></li>
-          <li class="user-list--compare"><a href="#" class="user-compare">Сравнить</a></li>
-          <li class="user-list--cart"><a href="#" class="user-cart">Корзина</a></li>
+          <li class="user-list--login">
+            <a href="#" class="user-list-link user-login">Войти</a>
+          </li>
+          <li class="user-list--compare">
+            <a href="#" class="user-list-link user-compare">Сравнить</a>
+          </li>
+          <li class="user-list--cart">
+            <a href="#" class="user-list-link user-cart">Корзина</a>
+          </li>
         </ul>
       </div>
       <ul class="nav__list-navigation">
-        <li><a href="#" class="main_nav-catalog">каталог товаров</a>
-          <ul class="list-navigation--column">
-            <li class="nav-column"><a href="#">Виртуальная реальность</a>
-              <a href="catalog.html">Моноподы для селфи</a>
-              <a href="#">Экшн-камеры</a></li>
-            <li class="nav-column"><a href="#">Фитнес-браслеты</a>
-              <a href="#">Умные часы</a></li>
-            <li class="nav-column"><a href="#">Квадрокоптер</a></li>
-          </ul>
+        <li class="main-nav-link nav__list-item">
+          <a href="#" class="main-nav-link main_nav-catalog">каталог товаров</a>
+          <div class="sub-list-navigation">
+            <ul class="list-navigation--column">
+              <li class="nav-column nav-column-1">
+                <a href="#">Виртуальная реальность</a>
+                <a href="catalog.html">Моноподы для селфи</a>
+                <a href="#">Экшн-камеры</a></li>
+              <li class="nav-column nav-column-2">
+                <a href="#">Фитнес-браслеты</a>
+                <a href="#">Умные часы</a>
+              </li>
+              <li class="nav-column nav-column-3">
+                <a href="#">Квадрокоптер</a>
+              </li>
+            </ul>
+          </div>
         </li>
-        <li class="nav-delivery"><a href="#">доставка</a></li>
-        <li class="nav-warranty"><a href="#">гарантия</a></li>
-        <li class="nav-contacts"><a href="#">контакты</a></li>
+        <li class=" nav-delivery">
+          <a href="#" class="main-nav-link">доставка</a>
+        </li>
+        <li class="nav-warranty">
+          <a href="#" class="main-nav-link">гарантия</a>
+        </li>
+        <li class="nav-contacts">
+          <a href="#" class="main-nav-link">контакты</a>
+        </li>
       </ul>
     </nav>
   </header>
@@ -120,23 +140,23 @@
     <section class="main-link__goods conteiner">
       <h1 class="visually-hidden">гатжеты,электродевайсы</h1>
       <ul class="goods-link">
-        <li><a href="#" class="goods-link--vr">
-            <p>Виртуальная реальность</p>
+        <li><a href="#" class="goods-link-item goods-link--vr">
+            <p class="goods-link-name">Виртуальная реальность</p>
           </a></li>
-        <li><a href="catalog.html" class="goods-link--selfie">
-            <p>Моноподы для селфи</p>
+        <li><a href="catalog.html" class="goods-link-item goods-link--selfie">
+            <p class="goods-link-name">Моноподы для селфи</p>
           </a></li>
-        <li><a href="#" class="goods-link--camera">
-            <p>Экшн-камеры</p>
+        <li><a href="#" class="goods-link-item goods-link--camera">
+            <p class="goods-link-name">Экшн-камеры</p>
           </a></li>
-        <li><a href="#" class="goods-link--fitnes">
-            <p>Фитнес-браслеты</p>
+        <li><a href="#" class="goods-link-item goods-link--fitnes">
+            <p class="goods-link-name">Фитнес-браслеты</p>
           </a></li>
-        <li><a href="#" class="goods-link--watch">
-            <p>Умные часы</p>
+        <li><a href="#" class="goods-link-item goods-link--watch">
+            <p class="goods-link-name">Умные часы</p>
           </a></li>
-        <li><a href="#" class="goods-link--copter">
-            <p>Квадрокоптеры</p>
+        <li><a href="#" class="goods-link-item goods-link--copter">
+            <p class="goods-link-name">Квадрокоптеры</p>
           </a></li>
       </ul>
     </section>
@@ -209,9 +229,9 @@
       <a href="#" class="page-logo__footer"><img src="img/footer-e-logo.svg" width="163" height="35"
           alt="логотип DEVICE"></a>
       <ul class="user__list-footer">
-        <li><a href="#" class="login-footer">Войти</a></li>
-        <li><a href="#" class="compare-footer">Сравнить</a></li>
-        <li><a href="#" class="basket-footer">Корзина</a></li>
+        <li><a href="#" class="footer__user-link login-footer">Войти</a></li>
+        <li><a href="#" class="footer__user-link compare-footer">Сравнить</a></li>
+        <li><a href="#" class="footer__user-link basket-footer">Корзина</a></li>
       </ul>
     </div>
     <div class="footer-info conteiner">
@@ -225,9 +245,9 @@
     </div>
     <div class="social-list conteiner">
       <ul class="social__list-footer">
-        <li><a href="#" class="social__list-facebook"></a></li>
-        <li><a href="#" class="social__list-instagram"></a></li>
-        <li><a href="#" class="social__list-twitter"></a></li>
+        <li><a href="#" class="social__list-link social__list-facebook"></a></li>
+        <li><a href="#" class="social__list-link social__list-instagram"></a></li>
+        <li><a href="#" class="social__list-link social__list-twitter"></a></li>
       </ul>
       <a href="https://up.htmlacademy.ru/htmlcss/28/project/device#device-3-4" class="logo-academy--footer"
         target="blank">
@@ -259,8 +279,7 @@
   </section>
   <section class="map">
     <div class="popup-map">
-      <h2 class="visually-hidden">большая карта</h2>
-      <a href=""><img src="img/map-big1.png" alt="карта как доехать"></a>
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1594331867020!5m2!1sru!2sru" width="960" height="560" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> width="960" height="560" style="border:0" allowfullscreen></iframe>
       <button class="popup-write-us_close popup-map-close" type="button" name="close" aria-label="закрыть">
       </button>
     </div>
