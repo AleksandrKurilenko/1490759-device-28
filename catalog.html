@@ -16,8 +16,8 @@
     <nav class="main-navigation">
       <div class="main-nav--user">
         <form class="search" method="get" action="https://echo.htmlacademy.ru">
-          <label class="visually-hidden" for="search" hidden>поиск по сайту</label>
           <input class="search-input" id="search" type="search" name="search" placeholder="Поиск по сайту">
+          <label class="visually-hidden" for="search" hidden></label>
           <button class="search-button" type="submit">Найти</button>
         </form>
         <ul class="user-list--navigation">
@@ -165,12 +165,12 @@
               <li class="filter__radio-yes">
                 <input class="filter__radio-input  visually-hidden" id="filter-control-1" type="radio" name="bluetooth"
                   value="yes" checked="">
-                <label class="filter-radio-label" for="filter-control-1">Есть</label>
+                <label class="filter-radio-label-yes filter-radio-label" for="filter-control-1">Есть</label>
               </li>
               <li class="filter__radio-no">
                 <input class="filter__radio-input  visually-hidden" id="filter-control-2" type="radio" name="bluetooth"
                   value="no">
-                <label class="filter-radio-label" for="filter-control-2">Нет</label>
+                <label class="filter-radio-label-no filter-radio-label" for="filter-control-2">Нет</label>
               </li>
             </ul>
           </fieldset>
@@ -241,7 +241,7 @@
         </div>
         <ul class="pagination-list">
           <li class="pagination-back">
-            <a href="#">назад</a>
+            <a href="#" class="pagination-item-back">назад</a>
           </li>
           <li class="pagination-1">
             <a href="#">1</a>
@@ -253,7 +253,7 @@
             <a href="#">3</a>
           </li>
           <li class="pagination-forward">
-            <a href="#">вперёд</a>
+            <a href="#" class="pagination-item-forward">вперед</a>
           </li>
         </ul>
       </section>
