@@ -134,8 +134,6 @@ a {
   margin-right: auto;
 }
 
-/* header */
-
 .page-header {
   display: grid;
   margin-top: 20px;
@@ -295,7 +293,6 @@ a {
 .search-input:focus {
   opacity: 1;
 }
-
 
 .search::before:focus~.search-button::before,
 .search::before:focus~.search-button {
