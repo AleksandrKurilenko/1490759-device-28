@@ -6,7 +6,7 @@ var loginPopup = popupWrite.querySelector(".popup-login");
 var email = popupWrite.querySelector(".popup-email");
 var openMap = document.querySelector(".main-contacts__map");
 var popupMap = document.querySelector(".map");
-var popupMapClose=document.querySelector(".popup-map-close");
+var popupMapClose = document.querySelector(".popup-map-close");
 
 openBtnPopup.addEventListener("click", function (evt) {
   evt.preventDefault();
@@ -40,7 +40,7 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-openMap.addEventListener("click", function(evt) {
+openMap.addEventListener("click", function (evt) {
   evt.preventDefault();
   popupMap.classList.add("popup-map--active");
 });
@@ -54,7 +54,7 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-popupMapClose.addEventListener("click", function(evt) {
+popupMapClose.addEventListener("click", function (evt) {
   evt.preventDefault(),
-  popupMap.classList.remove("popup-map--active");
+    popupMap.classList.remove("popup-map--active");
 });
