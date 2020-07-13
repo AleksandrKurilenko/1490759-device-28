@@ -219,7 +219,7 @@
         <h2 class="title__section-info title-info-contacts">Контакты</h2>
         <p class="text__section-contacts">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете<br>
           проверить работоспособность покупки. Всякое бывает.</p>
-        <a href="#"><img src="img/map1.jpg" alt="карта как доехать" width="560" height="222"></a>
+        <a href="#" class="main-contacts__map"><img src="img/map1.jpg" alt="карта как доехать" width="560" height="222"></a>
         <a href="#" class="btn btn-section-contacts"> напишите нам</a>
       </section>
     </div>
@@ -245,9 +245,9 @@
     </div>
     <div class="social-list conteiner">
       <ul class="social__list-footer">
-        <li><a href="#" class="social__list-link social__list-facebook"></a></li>
-        <li><a href="#" class="social__list-link social__list-instagram"></a></li>
-        <li><a href="#" class="social__list-link social__list-twitter"></a></li>
+        <li><a href="#" class="social__list-link social__list-facebook" aria-label="facebook"></a></li>
+        <li><a href="#" class="social__list-link social__list-instagram" aria-label="instagram"></a></li>
+        <li><a href="#" class="social__list-link social__list-twitter" aria-label="twitter"></a></li>
       </ul>
       <a href="https://up.htmlacademy.ru/htmlcss/28/project/device#device-3-4" class="logo-academy--footer"
         target="blank">
@@ -255,17 +255,17 @@
       </a>
     </div>
   </footer>
-  <section class="popup-write-us">
+  <section class="popup-write-us popup">
     <h2 class="visually-hidden">Форма для обратной связи</h2>
     <div class="popup-block">
       <form class="popup-form" method="post" action="https://echo.htmlacademy.ru">
         <div class="popup-form--username">
           <label for="user-name">Ваше имя:</label>
-          <input type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
+          <input class="popup-login" type="text" id="user-name" name="user-name" placeholder="Имя Фамилия">
         </div>
         <div class="popup-form--email">
           <label for="user-email">Ваш e-mail:</label>
-          <input type="email" id="user-email" name="user-email" placeholder="email@example.com">
+          <input class="popup-email" type="email" id="user-email" name="user-email" placeholder="email@example.com">
         </div>
         <div class="popup-form--message">
           <label for="user-message">Текст письма:</label>
@@ -273,12 +273,11 @@
         </div>
         <button class="btn" type="submit" name="send">Отправить</button>
       </form>
-      <button class="popup-write-us_close" type="reset" name="close" aria-label="закрыть">
+      <button class="popup-write-us_close" type="button" name="close" aria-label="закрыть">
       </button>
     </div>
   </section>
   <div class="map">
-
     <div class="popup-map">
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2249.1125488779976!2d37.52742931592807!3d55.687030980535816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1594331867020!5m2!1sru!2sru"
@@ -287,6 +286,7 @@
       </button>
     </div>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
